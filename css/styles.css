@@ -1,0 +1,66 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: url(../images/ghost_nebula.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.nav-container {
+    margin: 0 auto;
+    max-width: 960px;
+    border-bottom: solid;
+    border-width: 1px;
+    background-color: #333;
+    opacity: 0.95;
+}
+
+
+.wrapper {
+    min-height: 100%;
+}
+
+.container {
+    max-width: 960px;
+    background-color: #333;
+    opacity: 0.65;
+    
+}
+
+
+.page-footer {
+    background-color: #333;
+    opacity: 0.95;
+
+}
+
+footer {
+    width: 100%;
+    opacity: 0.95;
+    
+}
+
+.content {
+    min-width: 960px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
