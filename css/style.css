@@ -1,9 +1,9 @@
-/* Default Values */
 
 * {
     margin: 0px;
     padding: 0px;
 }
+
 
 html,
 body {
@@ -20,200 +20,44 @@ body {
     background-size: cover;
 }
 
-h1 {
-    font-weight: normal;
-    font-family: 'Courier New', Courier, monospace;
-    text-transform: lowercase;
-    font-size: 40px;
-    color: #fff;
-}
-
-hr {
-    border-color: #fff;
-}
-
-hr.clear {
-    clear: both;
-    visibility: hidden;
-}
-
-/* Header Section */
-
-header {
-    z-index: 100;
-    height: auto;
-    width: 100%;
-    position: fixed;
-    margin-top: 0;
-    background-color: #333;
-    border-bottom: solid;
-    border-width: 1px;
-    opacity: .95;
-}
-
-/* Navigation Bar */
 
 .nav-container {
     margin: 0 auto;
     max-width: 960px;
-    /* float: none; */
+    border-bottom: solid;
+    border-width: 1px;
+    background-color: #333;
+    opacity: 0.95;
 }
 
-/* .nav-home {
-    padding: 20px 15px;
-    background-color: lightgrey;
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Courier New', Courier, monospace;
-    text-transform: lowercase;
-    float: left;
-} */
-
-/* .nav-bar {
-    float: right;
-} */
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-/* li {
-    float: left;
-} */
-
-li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 25px 20px;
-    text-decoration: none;
-    font-size: 15px;
-}
-
-/* Content Section */
 
 .wrapper {
     min-height: 100%;
-    position: relative;
+}
+
+.container {
+    max-width: 960px;
+    background-color: #333;
+    opacity: 0.65;
+    
+}
+
+
+.page-footer {
+    background-color: #333;
+    opacity: 0.95;
+
+}
+
+footer {
+    width: 100%;
+    opacity: 0.95;
+    
 }
 
 .content {
-    max-width: 960px;
-    margin: 0 auto;
+    min-width: 960px;
 }
-
-.about {
-    background-color: #333;
-    opacity: .65;
-}
-
-/* About Section Asset Styles */
-
-.profile-img {
-    float: left;
-    margin: 10px 10px;
-}
-
-p.bio {
-    float: none;
-    margin: 10px 10px;
-    color: #fff;
-}
-
-/* Contact Form */
-
-* {
-    box-sizing: border-box;
-}
-
-/* Contact Form Input Styles */
-
-input[type=text],
-select,
-textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-.column {
-    float: none;
-    width: 50%;
-    margin-top: 6px;
-    padding: 20px;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-@media screen and (max-width: 600px) {
-    .column,
-    input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
-}
-
-label {
-    color: #fff;
-}
-
-/* Portfolio Section Asset Styles */
-
-.gallery-container {
-    overflow: hidden;
-}
-
-/* Adding overflow: hidden; was able to fix the gallery feature in the portfolio – float took the gallery images out of the flow and the <div> didn't recognize it so it collapsed over the header */
-
-.gallery {
-    margin: 10px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 200px;
-}
-
-.gallery:hover {
-    border: 1px solid #777;
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-.desc {
-    padding: 15px;
-    text-align: center;
-}
-
-/* Footer Section */
-
-
-
-/* Clearfix Hack */
 
 .clearfix::after {
     content: "";
